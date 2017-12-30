@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mods List ▼</key>
+	<string>Mods List ▼</string>
+	<key>Settings</key>
+	<string>Settings</string>
+	<key>Apply</key>
+	<string>Apply</string>
+	<key>Warning</key>
+	<string>Warning</string>
+	<key>Your iOS Version is not supported.\nPlease update to iOS9 and jailbreak again.</key>
+	<string>Your iOS Version is not supported.\nPlease update to iOS9 and jailbreak again.</string>
+	<key>World of Tanks Blitz is not installed.\nPlease install it from App Store.</key>
+	<string>World of Tanks Blitz is not installed.\nPlease install it from App Store.</string>
+	<key>Confirm</key>
+	<string>Confirm</string>
+	<key>There are no changes to be applied.</key>
+	<string>There are no changes to be applied.</string>
+	<key>%@Are you going to apply %d changes?</key>
+	<string>%@Are you going to apply %d changes?</string>
+	<key>Cancel</key>
+	<string>Cancel</string>
+	<key>Yes</key>
+	<string>Yes</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>Return to Mod List</key>
+	<string>Return to Mod List</string>
+	<key>Downloading %@...</key>
+	<string>Downloading %@...</string>
+	<key>Downloading the removal data of %@...</key>
+	<string>Downloading the removal data of %@...</string>
+	<key>Installing %@...</key>
+	<string>Installing %@...</string>
+	<key>Removing %@...</key>
+	<string>Removing %@...</string>
+	<key>Language Settings</key>
+	<string>Language Settings</string>
+	<key>Done</key>
+	<string>Done</string>
+	<key>Caution</key>
+	<string>Caution</string>
+	<key>You have to restart the application to apply changes.</key>
+	<string>You have to restart the application to apply changes.</string>
+	<key>Your internet connection seems to be offline.</key>
+	<string>Your internet connection seems to be offline.</string>
+	<key>Notice</key>
+	<string>Notice</string>
+	<key>Error</key>
+	<string>Error</string>
+	<key>%@.plist does NOT exist! Please contact the owner of this repository.</key>
+	<string>%@.plist does NOT exist! Please contact the owner of this repository.</string>
+	<key>Back</key>
+	<string>Back</string>
+	<key>Repository</key>
+	<string>Repository</string>
+	<key>Repository List</key>
+	<string>Repository List</string>
+	<key>Enter Repository</key>
+	<string>Enter Repository</string>
+	<key>This repository has already been registered.</key>
+	<string>This repository has already been registered.</string>
+	<key>Checking Repository...</key>
+	<string>Checking Repository...</string>
+	<key>Running</key>
+	<string>Running</string>
+	<key>Select repository to show</key>
+	<string>Select repository to show</string>
+	<key>Queue</key>
+	<string>Queue</string>
+	<key>Remove</key>
+	<string>Remove</string>
+	<key>Install</key>
+	<string>Install</string>
+	<key>Others</key>
+	<string>Others</string>
+	<key>Not Installed</key>
+	<string>Not Installed</string>
+	<key>Installed</key>
+	<string>Installed</string>
+	<key>Trouble Shooting</key>
+	<string>Trouble Shooting</string>
+	<key>Contact</key>
+	<string>Contact</string>
+	<key>Reset All Settings</key>
+	<string>Reset All Settings</string>
+	<key>Do you want to reset ALL settings?</key>
+	<string>Do you want to reset ALL settings?</string>
+    <key>Do you want to reset installation?</key>
+    <string>Do you want to reset installation?</string>
+	<key>Tap here when something is wrong with BlitzModder</key>
+	<string>Tap here when something is wrong with BlitzModder</string>
+    <key>Tap here when Blitz is updated</key>
+    <string>Tap here when Blitz is updated</string>
+	<key>Reset Installation</key>
+    <string>Reset Installation</string>
+	<key>Website</key>
+	<string>Website</string>
+	<key>Tap here to refer to the usage of BlitzModder</key>
+	<string>Tap here to refer to the usage of BlitzModder</string>
+	<key>Bug report / Feature request</key>
+	<string>Bug report / Feature request</string>
+	<key>\n\n\n\n\nDevice: %@\niOS Version: %@\nApp Version: %@</key>
+	<string>\n\n\n\n\nDevice: %@\niOS Version: %@\nApp Version: %@</string>
+	<key>Failed to check for update. Please report this to subdiox.</key>
+	<string>Failed to check for update. Please report this to subdiox.</string>
+	<key>New version of BlitzModder is available. Please go to Cydia to get the update.</key>
+	<string>New version of BlitzModder is available. Please go to Cydia to get the update.</string>
+	<key>You are using the newer version than latest one. Please report this to subdiox.</key>
+	<string>You are using the newer version than latest one. Please report this to subdiox.</string>
+	<key>File Not Found(404)! Please contact the owner of this repository.\n</key>
+	<string>File Not Found(404)! Please contact the owner of this repository.\n</string>
+	<key>Repository format is incorrect. Please input correctly.</key>
+	<string>Repository format is incorrect. Please input correctly.</string>
+	<key>This repository is invalid! Please contact the owner of this repository.</key>
+	<string>This repository is invalid! Please contact the owner of this repository.</string>
+	<key>Donation Title</key>
+	<string>Please make a donation</string>
+	<key>Donation Message</key>
+	<string>Thank you for using BlitzModder.\nI maintain my app and server by myself, but they cost me some money (for example, server fee).\nIf you like my app, please consider donating me.\nYou can donate me on Paypal, or you can send me some gold in game.\nI am playing in Asia(SEA) server as 'BlitzModder'.\nIf you want to be my friend, please don't hesitate to send me a friend request.</string>
+	<key>OK, I will donate</key>
+	<string>OK, I will donate</string>
+	<key>Remind me later</key>
+	<string>Remind me later</string>
+	<key>Never donate</key>
+	<string>No, I won't donate</string>
+	<key>Donate Developer</key>
+	<string>Donate Developer</string>
+	<key>Changes</key>
+	<string>Changes</string>
+</dict>
+</plist>

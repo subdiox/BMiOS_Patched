@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mods List ▼</key>
+	<string>模组列表 ▼</string>
+	<key>Settings</key>
+	<string>设置</string>
+	<key>Apply</key>
+	<string>应用修改</string>
+	<key>Warning</key>
+	<string>警告</string>
+	<key>Your iOS Version is not supported.\nPlease update to iOS9 and jailbreak again.</key>
+	<string>你的iOS版本过低！\n请升级至iOS9并再次越狱。</string>
+	<key>World of Tanks Blitz is not installed.\nPlease install it from App Store.</key>
+	<string>坦克世界闪电战没有安装在设备中！\n请在App Store下载并安装坦克世界闪电战。</string>
+	<key>Confirm</key>
+	<string>确认</string>
+	<key>There are no changes to be applied.</key>
+	<string>没有需要被应用的变更。</string>
+	<key>%@Are you going to apply %d changes?</key>
+	<string>%@确定要接受这 %d 项改变吗？</string>
+	<key>Cancel</key>
+	<string>撤销</string>
+	<key>Yes</key>
+	<string>是</string>
+	<key>OK</key>
+	<string>好</string>
+	<key>Return to Mod List</key>
+	<string>返回到模组列表</string>
+	<key>Downloading %@...</key>
+	<string>下载中 %@...</string>
+	<key>Downloading the removal data of %@...</key>
+	<string>正在下载 %@的初始文件...</string>
+	<key>Installing %@...</key>
+	<string>安装中 %@...</string>
+	<key>Removing %@...</key>
+	<string>移除中 %@...</string>
+	<key>Language Settings</key>
+	<string>语言设置</string>
+	<key>Done</key>
+	<string>完成</string>
+	<key>Caution</key>
+	<string>重要信息</string>
+	<key>You have to restart the application to apply changes.</key>
+	<string>为了使已做出的变更生效，请重新启动坦克世界闪电战。</string>
+	<key>Your internet connection seems to be offline.</key>
+	<string>请检查网络连接！</string>
+	<key>Notice</key>
+	<string>注意</string>
+	<key>Error</key>
+	<string>错误</string>
+	<key>%@.plist does NOT exist! Please contact the owner of this repository.</key>
+	<string>%@.源不存在。请自行联系源的开发者。</string>
+	<key>Back</key>
+	<string>返回</string>
+	<key>Repository</key>
+	<string>源</string>
+	<key>Repository List</key>
+	<string>源列表</string>
+	<key>Enter Repository</key>
+	<string>输入源</string>
+	<key>This repository has already been registered.</key>
+	<string>这个源已经被注册。</string>
+	<key>Checking Repository...</key>
+	<string>正在检查源...</string>
+	<key>Running</key>
+	<string>运行中</string>
+	<key>Select repository to show</key>
+	<string>选择需要展示的源</string>
+	<key>Queue</key>
+	<string>队列中</string>
+	<key>Remove</key>
+	<string>移除</string>
+	<key>Install</key>
+	<string>安装</string>
+	<key>Others</key>
+	<string>其他</string>
+	<key>Not Installed</key>
+	<string>没有被安装</string>
+	<key>Installed</key>
+	<string>已安装</string>
+	<key>Trouble Shooting</key>
+	<string>故障排除</string>
+	<key>Contact</key>
+	<string>联系</string>
+	<key>Reset All Settings</key>
+	<string>重置所有设置</string>
+	<key>Do you want to reset ALL settings?</key>
+	<string>真的要重置所有设置吗？</string>
+    <key>Do you want to reset installation?</key>
+    <string>真的要重置所有安装吗？</string>
+	<key>Tap here when something is wrong with BlitzModder</key>
+	<string>如果BlitzModder出错请点击这里</string>
+    <key>Tap here when Blitz is updated</key>
+    <string>当坦克世界闪电战升级后请点击这里</string>
+	<key>Reset Installation</key>
+    <string>重置所有安装</string>
+	<key>Website</key>
+	<string>网页</string>
+	<key>Tap here to refer to the usage of BlitzModder</key>
+	<string>点击这里以获得BlitzModder的使用帮助</string>
+	<key>Bug report / Feature request</key>
+	<string>Bug反馈/提供建议</string>
+	<key>\n\n\n\n\nDevice: %@\niOS Version: %@\nApp Version: %@</key>
+	<string>\n\n\n\n\n装置: %@\niOS 版本: %@\nApp 版本: %@</string>
+	<key>Failed to check for update. Please report this to subdiox.</key>
+	<string>检查更新失败。请将此情况反馈给Subdiox。</string>
+	<key>New version of BlitzModder is available. Please go to Cydia to get the update.</key>
+	<string>最新版本的BlitzModder已准备完毕，请在Cydia更新最新版。</string>
+	<key>You are using the newer version than latest one. Please report this to subdiox.</key>
+	<string>你正在使用超前的版本，请将此情况反馈给Subdiox。</string>
+	<key>File Not Found(404)! Please contact the owner of this repository.\n</key>
+	<string>未找到文件（404）！请联系该源的作者。\n</string>
+	<key>Repository format is incorrect. Please input correctly.</key>
+	<string>源的格式错误。请正确输入源。</string>
+	<key>This repository is invalid! Please contact the owner of this repository.</key>
+	<string>这个源已经失效。请联系该源的作者。</string>
+	<key>Donation Title</key>
+	<string>请您捐赠</string>
+	<key>Donation Message</key>
+	<string>感谢您使用BlitzModder！.\n我自己在维持着BlitzModder的运行，但是这造成了我的许多额外开支（比如服务器费用）。\n如果您喜欢使用BlitzModder，请考虑向我捐赠！\n您可以在Paypal上向我捐赠, 或者在坦克世界闪电战的礼品店中向我赠送一些金币。\n我在亚洲服务器，我的游戏ID是'BlitzModder'。\n如果您认为我是您的朋友，请不要犹豫一个朋友的请求！</string>
+	<key>Ok, I will donate</key>
+	<string>好，我要捐赠！</string>
+	<key>Remind me later</key>
+	<string>以后提醒我。</string>
+	<key>Never donate</key>
+	<string>不，我不要捐赠。</string>
+	<key>Donate Developer</key>
+	<string>给开发者捐赠</string>
+	<key>Changes</key>
+	<string>变更</string>
+</dict>
+</plist>
+
+

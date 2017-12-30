@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mods List ▼</key>
+	<string>Список модов ▼</string>
+	<key>Settings</key>
+	<string>Настройки</string>
+	<key>Apply</key>
+	<string>Применить</string>
+	<key>Warning</key>
+	<string>Предупреждение</string>
+	<key>Your iOS Version is not supported.\nPlease update to iOS9 and jailbreak again.</key>
+	<string>Ваша версия iOS не поддерживается.\nПожалуйста обновите до iOS9 и попробуйте снова.</string>
+	<key>World of Tanks Blitz is not installed.\nPlease install it from App Store.</key>
+	<string>World of Tanks Blitz не установлен.\nПожалуйста установите игру из App Store.</string>
+	<key>Confirm</key>
+	<string>Подтвердить</string>
+	<key>There are no changes to be applied.</key>
+	<string>Нет никаких изменений, чтобы можно было применить.</string>
+	<key>%@Are you going to apply %d changes?</key>
+	<string>%@Вы действительно хотите применить %d изменения?</string>
+	<key>Cancel</key>
+	<string>Отмена</string>
+	<key>Yes</key>
+	<string>Да</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>Return to Mod List</key>
+	<string>Назад к списку модов</string>
+	<key>Downloading %@...</key>
+	<string>Загрузка %@...</string>
+	<key>Downloading the removal data of %@...</key>
+	<string>Загрузка удаленных данных %@...</string>
+	<key>Installing %@...</key>
+	<string>Установка %@...</string>
+	<key>Removing %@...</key>
+	<string>Удаление %@...</string>
+	<key>Language Settings</key>
+	<string>Настройка языка</string>
+	<key>Done</key>
+	<string>Готово</string>
+	<key>Caution</key>
+	<string>Внимание</string>
+	<key>You have to restart the application to apply changes.</key>
+	<string>Вы должны перезапустить приложение, чтобы применить изменения.</string>
+	<key>Your internet connection seems to be offline.</key>
+	<string>Отсутствует подключение к интернету..</string>
+	<key>Notice</key>
+	<string>Уведомление</string>
+	<key>Error</key>
+	<string>Ошибка</string>
+	<key>%@.plist does NOT exist! Please contact the owner of this repository.</key>
+	<string>%@.plist не существует! Пожалуйста свяжитесь с владельцем репозитория.</string>
+	<key>Back</key>
+	<string>Назад</string>
+	<key>Repository</key>
+	<string>Репозиторий</string>
+	<key>Repository List</key>
+	<string>Список репозиториев</string>
+	<key>Enter Repository</key>
+	<string>Введите репозиторий</string>
+	<key>This repository has already been registered.</key>
+	<string>Этот репозиторий уже зарегистрирован.</string>
+	<key>Checking Repository...</key>
+	<string>Проверка репозитория...</string>
+	<key>Running</key>
+	<string>Запустить</string>
+	<key>Select repository to show</key>
+	<string>Ваберите репозиторий для показа</string>
+	<key>Queue</key>
+	<string>Очередь</string>
+	<key>Remove</key>
+	<string>Удалить</string>
+	<key>Install</key>
+	<string>Установить</string>
+	<key>Others</key>
+	<string>Другие</string>
+	<key>Not Installed</key>
+	<string>Не установлено</string>
+	<key>Installed</key>
+	<string>Установлено</string>
+	<key>Trouble Shooting</key>
+	<string>Поиск неисправностей</string>
+	<key>Contact</key>
+	<string>Контакты</string>
+	<key>Reset All Settings</key>
+	<string>Сбросить все настройки</string>
+	<key>Do you want to reset ALL settings?</key>
+	<string>Вы хотите сбросить все настройки?</string>
+    <key>Do you want to reset installation?</key>
+    <string>Вы хотите сбросить установку?</string>
+	<key>Tap here when something is wrong with BlitzModder</key>
+	<string>Нажмите здесь, если что-то не так с BlitzModder</string>
+    <key>Tap here when Blitz is updated</key>
+    <string>Нажмите здесь, когда Blitz будет обновляться</string>
+	<key>Reset Installation</key>
+    <string>Сброс установки</string>
+	<key>Website</key>
+	<string>Сайт</string>
+	<key>Tap here to refer to the usage of BlitzModder</key>
+	<string>Нажмите здесь, чтобы перейти в раздел "Usage" на сайте BlitzModder</string>
+	<key>Bug report / Feature request</key>
+	<string>Отчет об ошибке / Обращение</string>
+	<key>\n\n\n\n\nDevice: %@\niOS Version: %@\nApp Version: %@</key>
+	<string>\n\n\n\n\nУстройство: %@\nВерсия iOS: %@\nВерсия игры: %@</string>
+	<key>Failed to check for update. Please report this to subdiox.</key>
+	<string>Не удалось проверить наличие обновлений. Пожалуйста, сообщите об этом разработчику.</string>
+	<key>New version of BlitzModder is available. Please go to Cydia to get the update.</key>
+	<string>Новая версия BlitzModder доступна. Пожалуйста, перейдите на Cydia для обновления.</string>
+	<key>You are using the newer version than latest one. Please report this to subdiox.</key>
+	<string>Вы используете новую версию, чем существующая. Пожалуйста, сообщите об этом разработчику.</string>
+	<key>File Not Found(404)! Please contact the owner of this repository.\n</key>
+	<string>Файл не найден (404)! Пожалуйста, свяжитесь с владельцем этого репозитория.\n</string>
+	<key>Donation Title</key>
+	<string>Please make a donation</string>
+	<key>Donation Message</key>
+	<string>Thank you for using BlitzModder.\nI maintain my app and server by myself, but they cost me some money (for example, server fee).\nIf you like my app, please consider donating me.\nYou can donate me on Paypal, or you can send me some gold in game.\nI am playing in Asia(SEA) server as 'BlitzModder'.\nIf you want to be my friend, please don't hesitate to send me a friend request.</string>
+</dict>
+</plist>
