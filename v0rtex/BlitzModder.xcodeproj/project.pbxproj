@@ -50,6 +50,7 @@
 		4C6EFB071FF775B700235D4D /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C6EFADD1FF775B700235D4D /* aestab.c */; };
 		4C6EFB081FF775B700235D4D /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6EFAE21FF775B700235D4D /* SSZipArchive.m */; };
 		4C6EFB0B1FF7765200235D4D /* symbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6EFB0A1FF7765200235D4D /* symbols.m */; };
+		4C6EFB4A1FF77BFC00235D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6EFB491FF77BFC00235D4D /* Main.storyboard */; };
 		B58B32401FE4EBA300EB7B47 /* kernel.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B323D1FE4EBA300EB7B47 /* kernel.m */; };
 		B58B32491FE4F3DF00EB7B47 /* root-rw.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B32481FE4F3DF00EB7B47 /* root-rw.m */; };
 		B5C5C5D31FE9C51A0022D2EC /* amfi.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C5C5D21FE9C51A0022D2EC /* amfi.m */; };
@@ -144,6 +145,7 @@
 		4C6EFAE31FF775B700235D4D /* BMRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRootViewController.h; sourceTree = "<group>"; };
 		4C6EFB091FF7765200235D4D /* symbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symbols.h; sourceTree = "<group>"; };
 		4C6EFB0A1FF7765200235D4D /* symbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = symbols.m; sourceTree = "<group>"; };
+		4C6EFB491FF77BFC00235D4D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B58B323D1FE4EBA300EB7B47 /* kernel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kernel.m; sourceTree = "<group>"; };
 		B58B323F1FE4EBA300EB7B47 /* kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel.h; sourceTree = "<group>"; };
 		B58B32481FE4F3DF00EB7B47 /* root-rw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "root-rw.m"; sourceTree = "<group>"; };
@@ -293,16 +295,25 @@
 			path = aes;
 			sourceTree = "<group>";
 		};
+		4C6EFB4B1FF77C0200235D4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C6EFB491FF77BFC00235D4D /* Main.storyboard */,
+				4C6EFA8D1FF7752800235D4D /* Info.plist */,
+				4C6EFA8A1FF7751900235D4D /* Assets.xcassets */,
+				4C6EFA891FF7751900235D4D /* main.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EE5252A01FDA4F2F00993801 = {
 			isa = PBXGroup;
 			children = (
 				4C6EFA861FF774E400235D4D /* AppDelegate.h */,
 				4C6EFA871FF774E400235D4D /* AppDelegate.m */,
-				4C6EFA8D1FF7752800235D4D /* Info.plist */,
-				4C6EFA8A1FF7751900235D4D /* Assets.xcassets */,
-				4C6EFA891FF7751900235D4D /* main.m */,
 				4C6EFA921FF775B700235D4D /* BlitzModder */,
 				EE5252AB1FDA4F2F00993801 /* v0rtex-S */,
+				4C6EFB4B1FF77C0200235D4D /* Resources */,
 				EE5252AA1FDA4F2F00993801 /* Products */,
 				EE665E201FDBFDB600FF457E /* Frameworks */,
 			);
@@ -418,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C6EFAE91FF775B700235D4D /* Default@2x.png in Resources */,
+				4C6EFB4A1FF77BFC00235D4D /* Main.storyboard in Resources */,
 				4C6EFAEE1FF775B700235D4D /* Default.png in Resources */,
 				4C6EFA8C1FF7751900235D4D /* Assets.xcassets in Resources */,
 				4C6EFAEC1FF775B700235D4D /* Default-667h@2x.png in Resources */,
@@ -610,7 +622,7 @@
 				DEVELOPMENT_TEAM = 7DVG8XN4BQ;
 				ENABLE_BITCODE = NO;
 				GCC_NO_COMMON_BLOCKS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,7 +646,7 @@
 				DEVELOPMENT_TEAM = 7DVG8XN4BQ;
 				ENABLE_BITCODE = NO;
 				GCC_NO_COMMON_BLOCKS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
