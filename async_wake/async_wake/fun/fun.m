@@ -280,7 +280,7 @@ zm_tmp < kernel_map.start ? zm_tmp + 0x100000000 : zm_tmp \
 		kwrite32(v_mount + 0x71, v_flag);
 	}
 	
-	
+	/*
 //	printf("[fun] currently cs_debug is at %d\n", rk32(0xFFFFFFF0076220EC+slide));
 //	wk32(0xFFFFFFF0076220EC+slide, 100);
 	
@@ -437,5 +437,5 @@ zm_tmp < kernel_map.start ? zm_tmp + 0x100000000 : zm_tmp \
 	kwrite64(IOSurfaceRootUserClient_port + koffset(KSTRUCT_OFFSET_IPC_PORT_IP_KOBJECT), IOSurfaceRootUserClient_addr);
 	kwrite64(kread64(kern_ucred+0x78)+0x8, 0);
 	term_kernel();
-	
+	*/
 }
